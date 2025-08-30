@@ -18,6 +18,26 @@ threat-detection-project/
 ├── label_mapping.joblib # Class label mappings
 └── .gitignore # Git exclusion rules
 
+
+## 📊 Development Notebooks
+- **trainingv2.ipynb**: Model training procedures and hyperparameter tuning
+- **modelv4.ipynb**: Model architecture development and experimentation
+- **testing.ipynb**: Model evaluation and performance metrics
+- **testingv3.ipynb**: Additional validation tests
+- **pipeline.ipynb**: Complete end-to-end processing pipeline
+
+## 🧠 Model Details
+- **Framework**: PyTorch
+- **Architecture**: Deep Neural Network
+- **Input**: Processed feature vectors from sensor/camera data
+- **Output**: Threat classification probabilities
+
+## 🔧 Data Preprocessing
+The system uses multiple preprocessing steps:
+1. Feature scaling using `final_scaler.joblib`
+2. Additional feature engineering with `feature_scaler.joblib`
+3. Label encoding through `label_mapping.joblib`
+
 ## 🚀 Installation & Usage
 
 ### Prerequisites
@@ -40,31 +60,3 @@ label_mapping = joblib.load('label_mapping.joblib')
 # Example: Preprocess new data
 # processed_data = scaler.transform(raw_data)
 # predictions = model(processed_data)
-
-📊 Development Notebooks
-
-trainingv2.ipynb: Model training procedures and hyperparameter tuning
-modelv4.ipynb: Model architecture development and experimentation
-testing.ipynb: Model evaluation and performance metrics
-testingv3.ipynb: Additional validation tests
-pipeline.ipynb: Complete end-to-end processing pipeline
-🧠 Model Details
-
-Framework: PyTorch
-Architecture: Deep Neural Network (specific details in notebooks)
-Input: Processed feature vectors from sensor/camera data
-Output: Threat classification probabilities
-🔧 Data Preprocessing
-
-The system uses multiple preprocessing steps:
-
-Feature scaling using final_scaler.joblib
-Additional feature engineering with feature_scaler.joblib
-Label encoding through label_mapping.joblib
-📈 Performance
-
-Model performance metrics and evaluation results are available in the testing notebooks. The system demonstrates high accuracy in identifying potential threats while maintaining low false positive rates.
-
-📝 License
-
-This project is intended for research and educational purposes. Please contact the authors for licensing information.
